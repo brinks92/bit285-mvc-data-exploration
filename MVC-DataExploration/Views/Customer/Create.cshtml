@@ -1,0 +1,24 @@
+﻿@model IEnumerable<MVC_DataExploration.Models.Customer>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1> Create new person</h1>
+<style>
+    form {
+        padding-left: 30px;
+    }
+</style>
+<form method="post">
+    <input type="text" value="First" name="FirstName" />
+    <input type="text" value="Last" name="LastName" />
+    <input type="text" value="Address" name="Address" />
+    <input type="text" value="City" name="City" />
+    <input type="text" value="State" name="State" />
+    <input type="text" value="Zip" name="Zip" />
+    <input type="text" value="Id" name="LoyaltyCardId" />
+    <input type="text" value="Family count" name="FamilyCount" />
+
+    <input type="submit" value="send" />
+</form>

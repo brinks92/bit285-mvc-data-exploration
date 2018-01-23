@@ -16,5 +16,18 @@ namespace MVC_DataExploration.Controllers
         {
             return View(db.Customers);
         }
+            public ActionResult Create()
+            {
+                return View();
+            }
+        [HttpPost]
+        public ActionResult Create (Customer customer)
+        {
+            db.Customers.Add(customer);
+            db.SaveChanges();
+            return RedirectToAction("index");
+        }
+
+
     }
 }
